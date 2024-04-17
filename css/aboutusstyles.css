@@ -1,0 +1,304 @@
+/* Web Programming Project 1 - Done by Tejeswi Devi Priya Pillarisetty - N01654962 
+                                       Rajyalakshmi Ketharaju - N01635480 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #fbf8d9;
+  color: maroon;
+
+  padding-top: 5rem; /* Adjust this value based on the height of your header */
+}
+
+body {
+  background-image: url(../images/aboutus.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Header */
+header {
+  color: rgb(223, 216, 213);
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 0.2%;
+  background: #010103;
+}
+
+header img {
+  height: 5rem;
+}
+
+#login {
+  float: right;
+}
+.nav-div {
+  /* margin: 0 1rem; */
+  font-size: 1.6rem;
+  align-items: center;
+}
+.navbar {
+  /* position: absolute; */
+  width: 90rem;
+  padding-left: 1rem;
+}
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-size: 1.3rem;
+}
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 6px;
+  text-decoration: none;
+}
+.navbar a:hover {
+  background-color: rgb(247, 131, 77);
+  padding-bottom: 0.5rem;
+}
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+/* Styling for main section */
+main {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  margin: auto; /* Center horizontally */
+}
+
+/* Styling for grid container */
+.grid-container {
+  display: grid; /* Use grid layout */
+  grid-template-columns: 250px 250px; /* Set column width */
+  grid-gap: 10px; /* Set gap between grid items */
+  background-color: maroon; /* Background color */
+  padding: 10px; /* Set padding */
+  margin-bottom: 10%;
+}
+
+/* Styling for grid container items */
+.grid-container > div {
+  background-color: rgb(255, 255, 255); /* Background color with opacity */
+  text-align: center; /* Align text to center */
+  padding: 20px 0; /* Set padding */
+  font-size: 30px; /* Set font size */
+}
+
+/* Styling for images inside grid container */
+.grid-container img {
+  height: auto; /* Set height to auto */
+  width: auto; /* Set width to auto */
+}
+
+/* Styling for image container */
+.image-container {
+  position: relative; /* Positioning */
+}
+
+/* Styling for grid item */
+.item {
+  position: relative; /* Positioning */
+}
+
+/* Styling for overlay on grid item hover */
+.item .overlay {
+  position: absolute; /* Positioning */
+  top: 0; /* Position from top */
+  left: 15%; /* Position from left */
+  width: 180px; /* Set width */
+  height: 180px; /* Set height */
+  background-color: maroon; /* Background color with opacity */
+  color: white; /* Text color */
+  font-size: 20px; /* Set font size */
+  text-align: center; /* Align text to center */
+  transform: rotateY(180deg); /* Rotate initially */
+  transition: transform 0.5s ease; /* Add transition effect */
+  pointer-events: none; /* Prevent interaction */
+  opacity: 0; /* Hide initially */
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Align content horizontally */
+  align-items: center; /* Align content vertically */
+}
+
+/* Styling for overlay on grid item hover */
+.item:hover .overlay {
+  transform: rotateY(0deg); /* Rotate on hover */
+  opacity: 1; /* Show on hover */
+}
+
+/* Styling for image inside grid item */
+.item:hover img {
+  opacity: 0; /* Hide image on hover */
+}
+
+/* Styling for image inside grid item */
+.item img {
+  height: 180px; /* Set height */
+  width: 180px; /* Set width */
+  transition: opacity 0.5s ease; /* Add transition effect */
+}
+
+.details {
+  font-size: 15px;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  height: auto;
+  background-color: #0d0e0d;
+  clear: both;
+  font-family: "Gabriola", sans-serif;
+  font-size: 18px;
+  color: #fff;
+}
+
+.leftfloat {
+  float: left;
+  width: 20%;
+  padding-left: 6%;
+}
+
+.leftfloat img {
+  height: 80%;
+  width: 70%;
+  padding: 20% 0 0 0.5%;
+}
+
+.leftfloat p {
+  font-size: 16px;
+}
+
+.social {
+  padding: 2% 2% 0 15%;
+  width: 48%;
+  float: left;
+}
+
+.social a {
+  padding-left: 5%;
+}
+
+.social img {
+  padding-top: 0.5%;
+  width: 30px;
+  height: 30px;
+}
+
+.contactus {
+  float: right;
+  padding: 1%;
+  width: 30%;
+}
+
+.contactus a {
+  text-decoration: none;
+  color: #fbf8d9;
+  font-weight: 800;
+}
+
+.copyright {
+  clear: both;
+  padding: 1%;
+}
+
+.copyright p {
+  padding-left: 2%;
+}
+
+/* Mobile view */
+@media screen and (max-width: 580px) {
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    padding-top: 0;
+  }
+
+  header img {
+    display: none;
+  }
+
+  header {
+    flex-direction: column;
+    padding-bottom: 1rem;
+    position: relative;
+  }
+  #login {
+    float: none;
+  }
+
+  .navbar {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .navbar a {
+    display: block;
+    padding: 1rem 0;
+    text-align: center;
+  }
+
+  .grid-container {
+    display: grid; /* Use grid layout */
+    grid-template-columns: 200px 200px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .leftfloat {
+    display: none;
+  }
+
+  .leftfloat img {
+    width: 70%;
+    height: 150px;
+  }
+
+  .social {
+    float: right;
+    width: 80%;
+    padding: 0;
+    text-align: center;
+    padding-bottom: 2%;
+  }
+
+  .contactus {
+    width: 100%;
+    text-align: center;
+  }
+
+  .copyright p {
+    padding: 0;
+    margin: 0;
+    padding-bottom: 5%;
+  }
+
+  .copyright hr {
+    width: 160%;
+    margin-left: -30%;
+  }
+}

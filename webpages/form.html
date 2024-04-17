@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="../css/form.css">
+   <title>Login</title>
+</head>
+
+<body>
+   <header>
+      <div id="logo">
+         <img src="../images/logo.png" alt="">
+      </div>
+      <nav class="navbar">
+         <div class="nav-div">
+            <a href="../index.html">Home</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="products.html">Products</a>
+            <a href="#" id="login">Signin/SignUp</a>
+
+         </div>
+      </nav>
+   </header>
+
+   <h2>Login Form</h2>
+
+   <form>
+      <div class="imgcontainer">
+         <img src="../images/logo.png" alt="Avatar" class="avatar">
+      </div>
+
+      <div class="container">
+         <label for="uname"><b>Username</b></label>
+         <input type="text" placeholder="Enter Username" name="uname" required>
+
+         <label for="psw"><b>Password</b></label>
+         <input type="password" placeholder="Enter Password" name="psw" required>
+
+         <button type="submit" id="submit">Login</button>
+         <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+         </label>
+      </div>
+
+      <div class="container" style="background-color:#f1f1f1">
+         <button type="button" class="cancelbtn">Cancel</button>
+         <span class="psw">New User ? <a href="register.html">Register here</a></span>
+      </div>
+      <h3> Or login with social media accounts</h3>
+
+      <div class="col">
+         <a href="https://www.facebook.com/" class="socialfb btn" style="background-color: #3B5998;">Login with
+            Facebook</a>
+         <a href="https://www.twitter.com/" class="socialtwt btn" style="background-color: #55ACEE;">Login with
+            Twitter</a>
+         <a href="https://www.google.com/" class="socialgg btn" style="background-color: #dd4b39;">Login with Google</a>
+      </div>
+   </form>
+
+   <footer>
+      <div class="leftfloat">
+         <!-- Image Source : https://www.adobe.com/express/create/logo  Created the logo from this website -->
+         <img src="../images/logo.png" alt="logo">
+         <p>Harvesting Health, One Crop at a Time</p>
+      </div>
+      <div class="social">
+         <h2>Timings</h2>
+         <p>Open 7 days a week, 365 days a year</p>
+         <p>9 AM to 5 PM</p>
+         <!-- Image Source : https://icons8.com/icons/set/facebook -->
+         <a href="https://www.facebook.com"><img src="../images/facebook.gif" alt="Facebook"></a>
+         <!-- Image Source : https://icons8.com/icons/set/twitter -->
+         <a href="https://www.twitter.com"><img src="../images/twitter.gif" alt="Twitter"></a>
+         <!-- Image Source : https://icons8.com/icons/set/youtube -->
+         <a href="https://www.youtube.com"><img src="../images/youtube.gif" alt="Youtube"></a>
+      </div>
+      <div class="contactus">
+         <h2>Contact us:</h2>
+         <p>Harvest Hustle Farms Inc. 456 Queen Street,</p>
+         <p>Toronto, Ontario, M5V 2B0</p>
+         <p>Toll-Free: <a href="tel:1-888-373-7878">1-888-373-H3H3</a></p>
+         <p>Email: <a href="mailto:info@hhf.ca">info@hhf.ca</a></p>
+      </div>
+      <div class="copyright">
+         <hr>
+         <p>&copy; 2024 Harvest Hustle Inc. All rights reserved</p>
+      </div>
+   </footer>
+   <script src="../js/form.js"></script>
+</body>
+
+</html>
